@@ -1,0 +1,9 @@
+#card {
+ width:250px;
+ height:250px;
+ background: black;
+}
+
+.out {
+  position: absolute;
+}
