@@ -1,9 +1,22 @@
-#card {
+#card
+{
  width:250px;
  height:250px;
  background: black;
 }
 
-.out {
+.out
+{
   position: absolute;
+  color:white; 
+  text-align:center;
+  font-size: 50px;
+  font-weight:bolder; 
+  vertical-align:50%;
+}
+
+.form
+{
+  text-align:center;
+    
 }
