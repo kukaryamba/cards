@@ -1,22 +1,39 @@
 #card
 {
- width:250px;
- height:250px;
- background: black;
+  width: 250px;
+  height: 250px;
+  background: black;
 }
 
-.out
+#out
 {
-  position: absolute;
   color:white; 
-  text-align:center;
+  text-align: center;
   font-size: 50px;
-  font-weight:bolder; 
-  vertical-align:50%;
+  font-weight: bolder; 
+  vertical-align: 50%;
 }
 
-.form
+form, #result
 {
-  text-align:center;
-    
+  text-align:center;  
+}
+
+.red 
+{
+ color: red;
+ font-size: 40px;
+ font-weight: bolder;
+}
+
+.green 
+{
+ color: green;
+ font-size: 40px;
+ font-weight: bolder;
+}
+
+.hidden
+{
+ display: none;
 }

@@ -1,19 +1,18 @@
-var engWords = ['devoted', 'obstacle', 'starch', 'omit', 'misfortune'];
-var translate = ["преданный", "препятствие", "крахмал", "пренебрегать", "неудача"];
-var rand = Math.floor(Math.random() * engWords.length);
+var engWords = ['devoted', 'obstacle', 'starch', 'omit', 'misfortune'],
+    translate = ["преданный", "препятствие", "крахмал", "пренебрегать", "неудача"],
+    rand = Math.floor(Math.random() * engWords.length),
+    out = document.getElementById('out');
+
 out.innerHTML =  engWords[rand];
 
-function checkTranslation () {
-if (translate[rand] === document.getElementById('answer').value ){
-document.getElementById("form").innerHTML="yep";
-document.getElementById('form').style.color="green";
-document.getElementById('form').style.fontSize="40px";
-document.getElementById('form').style.fontWeight="bolder";
+function checkTranslation() {
+    var answer = document.getElementById('answer');
+    if (translate[rand] === answer.value) {
+        red.classList.add("hidden");
+        green.classList.remove("hidden");
+    } else {
+        red.classList.remove("hidden");
+        green.classList.add("hidden");
+    }
 }
-else{
-document.getElementById('form').innerHTML = "NOPE!";
-document.getElementById('form').style.color="red";
-document.getElementById('form').style.fontSize="40px";
-document.getElementById('form').style.fontWeight="bolder";
-}}
 
