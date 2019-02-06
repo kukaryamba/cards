@@ -3,9 +3,18 @@
     width: 400px;
     height: 400px;
     background: salmon;
+    position:relative;
+    transition:2s;
+    transform-style:preserve-3d;
+    
 }
 
-#out
+#card:hover {
+    transform:rotateY(180deg);
+   
+}
+
+#eng #rus
 {
   color:white; 
   text-align: center;
@@ -13,4 +22,9 @@
   font-weight: bolder; 
   position:relative;
   top: 150px;
+}
+
+
+#card #eng {
+      backface-visibility: hidden;
 }

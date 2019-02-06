@@ -1,11 +1,11 @@
 var engWords = ['devoted', 'obstacle', 'starch', 'omit', 'misfortune'],
     rusWords = ["преданный", "препятствие", "крахмал", "пренебрегать", "неудача"],
     rand = Math.floor(Math.random() * engWords.length),
-    out = document.getElementById('out'),
+    eng = document.getElementById('eng'),
     show = engWords[rand];
-out.innerHTML = show;
+eng.innerHTML = show;
 
 
 function showTranslation() {
-    out.innerHTML = rusWords[rand];
+    rus.innerHTML = rusWords[rand];
 }
